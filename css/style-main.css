@@ -1,0 +1,88 @@
+:root{
+    --txt-bg-while: rgb(255, 255, 255);     /*Былий для фону та тексту*/
+    --txt-bg-blue: rgb(33, 150, 243);       /*Блакитний для фону та тексту*/
+    --txt-content: rgb(117, 117, 117);      /*Додатковий колір тексту*/
+    --bg-light-gray: rgb(245, 244, 250);    /*Світло сірий фон*/
+    --txt-a-blinck: rgba(255, 255, 255, 0.6);
+}
+
+/*=== Розширена шапка ===*/
+.head-h1{
+    color: var(--txt-bg-while);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+}
+
+.head-button{
+    background-color: var(--txt-bg-blue);
+    color: var(--txt-bg-while);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    font-weight: 700;
+}
+/*=== /Розширена шапка ===*/
+
+/*=== блок характеристик ===*/
+.text, .text h3{
+    font-size: 14px;
+}
+
+.properties{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.properties-content{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--txt-content);
+}
+
+.title-second{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+/*=== /блок характеристик ===*/
+
+/*=== Карточки сотрудников ===*/
+.card-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.card-content{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--txt-content);
+}
+/*=== /Карточки сотрудников ===*/
+
+
+
+/*.text-white-a{
+    color: var(--txt-a-blinck);
+}
+
+.text-white-footer{
+    color: var(--text-white);
+}
+
+

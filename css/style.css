@@ -1,0 +1,112 @@
+/*Глобальні змінні*/
+:root{
+    --txt-main-color: rgb(33, 33, 33);      /*Основний колір тексту*/
+    --txt-content: rgb(117, 117, 117);      /*Додатковий колір тексту*/
+    --txt-black: rgb(00, 00, 00);           /*Чорний для тексту*/
+    --txt-bg-blue: rgb(33, 150, 243);       /*Блакитний для фону та тексту*/
+    --txt-bg-while: rgb(255, 255, 255);     /*Былий для фону та тексту*/
+    --bg-light-gray: rgb(245, 244, 250);    /*Світло сірий фон*/
+    --bg-dark-blue: rgb(47, 48, 58);        /*Темно синий фон*/
+    --txt-a-blinck: rgba(255, 255, 255, 0.6);
+}
+
+/*=*=*=*=*=*=*=*=*=*= Основні налаштування для сайту =*=*=*=*=*=*=*=*=*=*/
+body {
+    font-family: Roboto;
+    font-size: 400;              /*Головний шрифт всього сойту*/
+    color: var(--text-main-color);              /* всьому тексту задаємо колір*/
+}
+
+a {
+    text-decoration: none;                      /*Прибираємо у ссилок підкреслення*/
+    color: var(--text-main-color);              /*Задаємо головний колір ссилкам*/
+}
+
+a:hover,
+a.info:hover{
+    color: var(--txt-bg-blue);
+}
+
+ul{
+    list-style-type: none;                     /*Прибираємо маркер в списках*/
+}
+
+.zebra-bg-w{
+    background-color: var(--txt-bg-while);
+}
+
+.zebra-bg-dark-b{
+    background-color: var(--bg-dark-blue);
+}
+
+.zebra-bg-light-g{
+    background-color: var(--bg-light-gray);
+}
+
+.visible{
+    background-color: var(--txt-bg-blue);
+    color: var(--txt-bg-while);
+}
+
+/*=*=*=*=*=*=*=*=*=*= /Основні налаштування =*=*=*=*=*=*=*=*=*=*/
+
+/*========== Блок header==========*/
+
+/*=== Логотип ===*/
+.logotip-header{
+    font-family: 'Raleway', serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--txt-black);
+}
+
+.logo-first {
+    color: var(--txt-bg-blue);
+}
+/*=== /Логотип ===*/
+
+/*=== Навігація ===*/
+.menu{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.5;
+}
+/*=== /Навігація ===*/
+
+/*=== Контактні інфо ===*/
+.cont{
+    color: var(--txt-content);
+    font-style: normal;
+}
+/*=== /Контактні інфо ===*/
+
+/*========== /Блок header==========*/
+
+/*========== Блок footer==========*/
+.logotip-footer{
+    font-family: 'Raleway', serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--txt-bg-while);
+}
+
+.cont-footer-a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--txt-a-blinck);
+    font-style: normal;
+}
+
+.cont-footer{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--txt-bg-while);
+}
+/*========== /Блок footer==========*/

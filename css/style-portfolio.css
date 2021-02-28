@@ -1,0 +1,57 @@
+:root{
+    --txt-content: rgb(117, 117, 117);      /*Додатковий колір тексту*/
+
+    --text-main-color: rgb(33, 33, 33);
+    --bg-while: rgb(245, 244, 250);
+    --text-txt-while: rgb(255, 255, 255);
+    --bg-blue: rgb(33, 150, 243);
+}
+
+/*=*=*=*=*=*=*=*=*=*= Основні налаштування =*=*=*=*=*=*=*=*=*=*/
+button{
+    color: var(--txt-main-color);
+    background-color: var(--bg-light-gray);
+    font-family: inherit;                     /*Примусове наслідування свойства від боді*/
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em; 
+}
+
+button:hover, button:focus{
+    color: var(--txt-bg-while);
+    background-color: var(--txt-bg-blue);
+}
+/*=*=*=*=*=*=*=*=*=*= /Основні налаштування =*=*=*=*=*=*=*=*=*=*/
+
+
+
+/*=== Готові роботи ===*/
+.work-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.work-content{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: var(--txt-content);
+}
+/*=== /Готові роботи ===*/
+
+/*.txt-content{
+    font-size: 16px;
+    color: var(--txt-content);
+    text-align: left;
+}
+
+.txt-title{
+    font-size: 18px;
+    text-align: left;
+}
+*/
