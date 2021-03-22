@@ -12,6 +12,7 @@
 
 /*=*=*=*=*=*=*=*=*=*= Основні налаштування для сайту =*=*=*=*=*=*=*=*=*=*/
 body {
+    /*margin: 0;                              Зняття браузерного марджена, який складає 8px*/
     font-family: Roboto;
     font-size: 400;              /*Головний шрифт всього сойту*/
     color: var(--text-main-color);              /* всьому тексту задаємо колір*/
@@ -28,24 +29,40 @@ a.info:hover{
 }
 
 ul{
-    list-style-type: none;                     /*Прибираємо маркер в списках*/
+    list-style-type: none;
+    padding: 0;
+    margin: 0;                     /*Прибираємо маркер в списках*/
 }
 
-.zebra-bg-w{
+.sections{
+    padding-top: 94px;  
+    padding-bottom: 94px;
     background-color: var(--txt-bg-while);
+}
+
+.sections:nth-child(2n){
+    background-color: var(--bg-light-gray);
+}
+
+.sections.no-padding{
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .zebra-bg-dark-b{
     background-color: var(--bg-dark-blue);
 }
 
-.zebra-bg-light-g{
-    background-color: var(--bg-light-gray);
-}
-
 .visible{
     background-color: var(--txt-bg-blue);
     color: var(--txt-bg-while);
+}
+
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 1200px;
+    outline: 1px solid tomato;
 }
 
 /*=*=*=*=*=*=*=*=*=*= /Основні налаштування =*=*=*=*=*=*=*=*=*=*/
@@ -67,10 +84,41 @@ ul{
 /*=== /Логотип ===*/
 
 /*=== Навігація ===*/
-.menu{
+.main-nav{
+    display: flex;
+    align-items: center;
+
+}
+
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child){
+    margin-right: 50px;
+}
+
+.site-nav .menu{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.5;
+}
+
+.auth-nav{
+    display: flex;
+}
+
+.address-nav{
+    margin-left: auto;
+}
+
+.auth-nav .item + .item{
+    margin-left: 50px;
 }
 /*=== /Навігація ===*/
 
@@ -85,6 +133,9 @@ ul{
 
 /*========== Блок footer==========*/
 .logotip-footer{
+    margin-top: 0;
+    margin-bottom: 20px;
+
     font-family: 'Raleway', serif;
     font-weight: 700;
     font-size: 26px;
@@ -101,6 +152,11 @@ ul{
     font-style: normal;
 }
 
+.cont-footer-p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .cont-footer{
     font-style: normal;
     font-weight: 400;
@@ -108,5 +164,9 @@ ul{
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--txt-bg-while);
+}
+.container.padding{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 /*========== /Блок footer==========*/
