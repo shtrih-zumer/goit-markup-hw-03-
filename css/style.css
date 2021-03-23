@@ -34,6 +34,10 @@ ul{
     margin: 0;                     /*Прибираємо маркер в списках*/
 }
 
+.ba{
+    display: block;
+}
+
 .sections{
     padding-top: 94px;  
     padding-bottom: 94px;
@@ -54,15 +58,15 @@ ul{
 }
 
 .visible{
-    background-color: var(--txt-bg-blue);
-    color: var(--txt-bg-while);
+    color: var(--txt-bg-blue);
+    /*color: var(--txt-bg-while);*/
 }
 
 .container{
     padding: 0 15px;
     margin: 0 auto;
     width: 1200px;
-    outline: 1px solid tomato;
+    /*outline: 1px solid tomato;*/
 }
 
 /*=*=*=*=*=*=*=*=*=*= /Основні налаштування =*=*=*=*=*=*=*=*=*=*/
@@ -111,9 +115,6 @@ ul{
 
 .auth-nav{
     display: flex;
-}
-
-.address-nav{
     margin-left: auto;
 }
 
@@ -133,6 +134,7 @@ ul{
 
 /*========== Блок footer==========*/
 .logotip-footer{
+    display: inline-block;
     margin-top: 0;
     margin-bottom: 20px;
 
@@ -143,7 +145,7 @@ ul{
     color: var(--txt-bg-while);
 }
 
-.cont-footer-a{
+.cont-text{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -152,19 +154,17 @@ ul{
     font-style: normal;
 }
 
-.cont-footer-p{
+.cont-text.link{
+    color: var(--txt-bg-while);
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.cont-footer{
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--txt-bg-while);
+.cont-footer .item:not(:last-child){
+    margin-bottom: 9px;
 }
+
+
 .container.padding{
     padding-top: 60px;
     padding-bottom: 60px;

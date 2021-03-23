@@ -15,7 +15,7 @@
     font-size: 44px;
     line-height: 1.36;
 
-    outline: 1px solid blue;
+    /*outline: 1px solid blue;*/
 }
 
 .head-button{
@@ -36,6 +36,8 @@
 
 .baner{
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 /*=== /Розширена шапка ===*/
 
