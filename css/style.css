@@ -34,7 +34,7 @@ ul{
     margin: 0;                     /*Прибираємо маркер в списках*/
 }
 
-.ba{
+.no-gap{
     display: block;
 }
 
@@ -142,6 +142,10 @@ ul{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    color: var(--txt-bg-while);
+}
+
+.logotip-footer:hover{
     color: var(--txt-bg-while);
 }
 
